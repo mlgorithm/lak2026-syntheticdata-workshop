@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Generative AI for Synthetic Data in Learning Analytics - LAK26 Workshop</title>
+    <meta
+      name="description"
+      content="A LAK26 pre-conference workshop on generative AI, synthetic data, and privacy-preserving learning analytics research."
+    >
+    <meta property="og:title" content="Generative AI for Synthetic Data in Learning Analytics">
+    <meta
+      property="og:description"
+      content="Opportunities, methods, and challenges for synthetic data in learning analytics."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lasd.slateresearch.ai/">
+    <link rel="canonical" href="https://lasd.slateresearch.ai/">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="LAK26 Workshop home">
+          <span class="brand-mark" aria-hidden="true">LA</span>
+          <span>
+            <span class="brand-title">LAK26 Workshop</span>
+            <span class="brand-subtitle">Synthetic Data</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+          <span class="visually-hidden">Open navigation</span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-menu" id="site-menu">
+          <a href="#about">About</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#organizers">Organizers</a>
+          <a href="#resources">Resources</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <canvas class="hero-canvas" data-hero-canvas aria-hidden="true"></canvas>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-inner">
+          <p class="eyebrow">LAK26 Pre-Conference Workshop</p>
+          <h1 id="hero-title">Generative AI for Synthetic Data in Learning Analytics</h1>
+          <p class="hero-subtitle">Opportunities, Methods, and Challenges</p>
+          <p class="hero-description">
+            A hands-on workshop exploring generative AI and synthetic data generation for
+            privacy-preserving learning analytics research.
+          </p>
+          <div class="hero-meta" aria-label="Workshop details">
+            <span><i class="fa-solid fa-calendar-days" aria-hidden="true"></i>April 28, 2026</span>
+            <span><i class="fa-solid fa-clock" aria-hidden="true"></i>9:00 AM - 12:30 PM</span>
+            <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i>LAK26 Conference Venue</span>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              Contact Organizers
+            </a>
+            <a class="button button-secondary" href="#schedule">
+              <i class="fa-solid fa-list-check" aria-hidden="true"></i>
+              View Schedule
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="conference-strip" aria-labelledby="conference-title">
+        <div class="container conference-strip-inner">
+          <div>
+            <p class="section-kicker">Official Listing</p>
+            <h2 id="conference-title">Part of LAK26 Pre-Conference Workshops</h2>
+            <p>
+              The workshop is listed in the official LAK26 pre-conference schedule.
+              Registration is handled through the LAK26 conference process.
+            </p>
+          </div>
+          <a
+            class="button button-dark"
+            href="https://www.solaresearch.org/events/lak/lak26/pre-conference-schedule/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            View LAK26 Schedule
+          </a>
+        </div>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="container two-column">
+          <div>
+            <p class="section-kicker">About</p>
+            <h2 class="section-title" id="about-title">Synthetic Data for Learning Analytics</h2>
+          </div>
+          <div class="rich-text">
+            <p>
+              Learning analytics research is often constrained by limited access to authentic
+              educational data because of ethical, legal, and privacy concerns. Synthetic data
+              offers a way to generate artificial datasets that preserve useful statistical
+              properties while protecting individual privacy.
+            </p>
+            <p>
+              Recent advances in generative AI, including large language models, diffusion
+              models, and generative adversarial networks, have improved the quality and scale
+              of synthetic data generation. This workshop focuses on practical methods,
+              evaluation strategies, and the research challenges that remain.
+            </p>
+          </div>
+        </div>
+
+        <div class="container feature-grid" aria-label="Workshop themes">
+          <article class="feature-card">
+            <span class="feature-icon"><i class="fa-solid fa-table" aria-hidden="true"></i></span>
+            <h3>Tabular Data</h3>
+            <p>Generate synthetic educational datasets with CTGAN, SDV, and related methods.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></span>
+            <h3>Text Generation</h3>
+            <p>Create synthetic assignments, feedback, and dialogues using large language models.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon"><i class="fa-solid fa-images" aria-hidden="true"></i></span>
+            <h3>Visual Content</h3>
+            <p>Explore multimodal and image generation methods for educational settings.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section schedule" id="schedule" aria-labelledby="schedule-title">
+        <div class="container section-heading">
+          <p class="section-kicker">Morning Half-Day Session</p>
+          <h2 class="section-title" id="schedule-title">Workshop Schedule</h2>
+        </div>
+
+        <div class="container timeline">
+          <article class="timeline-item">
+            <time>9:00 - 9:15</time>
+            <div>
+              <h3>Opening and Introductions</h3>
+              <p>Welcome, participant introductions, and workshop overview.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time>9:15 - 9:45</time>
+            <div>
+              <h3>Invited Keynote Talk</h3>
+              <p>Foundational perspectives on synthetic data in learning analytics.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time>9:45 - 10:30</time>
+            <div>
+              <h3>Lightning Talks</h3>
+              <p>Short presentations from participants followed by focused Q&amp;A.</p>
+            </div>
+          </article>
+          <article class="timeline-item timeline-break">
+            <time>10:30 - 10:45</time>
+            <div>
+              <h3>Break</h3>
+              <p>Networking and refreshments.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time>10:45 - 11:30</time>
+            <div>
+              <h3>Hands-on Tutorial: Tabular Data</h3>
+              <p>CTGAN, SDV frameworks, and evaluation metrics.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time>11:30 - 12:15</time>
+            <div>
+              <h3>Hands-on Tutorial: Text and Multimodal Data</h3>
+              <p>LLMs for text generation and diffusion models for images.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time>12:15 - 12:30</time>
+            <div>
+              <h3>Discussion and Wrap-up</h3>
+              <p>Community roadmap synthesis and closing remarks.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section organizers" id="organizers" aria-labelledby="organizers-title">
+        <div class="container section-heading">
+          <p class="section-kicker">Organizing Team</p>
+          <h2 class="section-title" id="organizers-title">Workshop Organizers</h2>
+        </div>
+
+        <div class="container organizer-grid">
+          <article class="organizer-card">
+            <img src="assets/organizers/farhad_vadiee.jpg" alt="Farhad Vadiee" width="320" height="320">
+            <div class="organizer-info">
+              <h3>Farhad Vadiee</h3>
+              <p class="organizer-role">Researcher</p>
+              <p>Centre for the Science of Learning &amp; Technology (SLATE)<br>University of Bergen, Norway</p>
+              <a href="mailto:farhad.vadiee@uib.no" aria-label="Email Farhad Vadiee">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="organizer-card">
+            <img src="assets/organizers/qinyi_liu.jpg" alt="Qinyi Liu" width="320" height="320">
+            <div class="organizer-info">
+              <h3>Qinyi Liu</h3>
+              <p class="organizer-role">PhD Candidate</p>
+              <p>Centre for the Science of Learning &amp; Technology (SLATE)<br>University of Bergen, Norway</p>
+              <a href="mailto:qinyi.liu@uib.no" aria-label="Email Qinyi Liu">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="organizer-card">
+            <img src="assets/organizers/pengfei.jpg" alt="Pengfei Li" width="320" height="320">
+            <div class="organizer-info">
+              <h3>Pengfei Li</h3>
+              <p class="organizer-role">PhD Candidate</p>
+              <p>Centre for the Science of Learning &amp; Technology (SLATE)<br>University of Bergen, Norway</p>
+              <a href="mailto:pengfei.li@uib.no" aria-label="Email Pengfei Li">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="organizer-card">
+            <img src="assets/organizers/oscar.jpg" alt="Oscar Deho" width="320" height="320">
+            <div class="organizer-info">
+              <h3>Oscar Deho</h3>
+              <p class="organizer-role">Postdoctoral Research Fellow</p>
+              <p>Centre for Change and Complexity in Learning (C3L)<br>University of South Australia, Australia</p>
+              <a href="mailto:oscar.deho@unisa.edu.au" aria-label="Email Oscar Deho">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="organizer-card">
+            <img src="assets/organizers/mohammad_khalil.jpg" alt="Mohammad Khalil" width="320" height="320">
+            <div class="organizer-info">
+              <h3>Mohammad Khalil</h3>
+              <p class="organizer-role">Associate Professor</p>
+              <p>Centre for the Science of Learning &amp; Technology (SLATE)<br>University of Bergen, Norway</p>
+              <a href="mailto:mohammad.khalil@uib.no" aria-label="Email Mohammad Khalil">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="organizer-card">
+            <img src="assets/organizers/srecko.jpg" alt="Srecko Joksimovic" width="320" height="320">
+            <div class="organizer-info">
+              <h3>Srecko Joksimovic</h3>
+              <p class="organizer-role">Associate Professor</p>
+              <p>Centre for Change and Complexity in Learning (C3L)<br>University of South Australia, Australia</p>
+              <a href="mailto:srecko.joksimovic@unisa.edu.au" aria-label="Email Srecko Joksimovic">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section resources" id="resources" aria-labelledby="resources-title">
+        <div class="container two-column">
+          <div>
+            <p class="section-kicker">Resources</p>
+            <h2 class="section-title" id="resources-title">Datasets and Workshop Materials</h2>
+          </div>
+          <div class="rich-text">
+            <p>
+              Synthetic educational datasets, reading materials, and code examples will be
+              shared with workshop participants as they are finalized.
+            </p>
+            <a
+              class="button button-dark"
+              href="https://github.com/mlgorithm/lak2026-syntheticdata-workshop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+              Open Workshop Repository
+            </a>
+          </div>
+        </div>
+
+        <div class="container resource-grid">
+          <article class="resource-card">
+            <i class="fa-solid fa-toolbox" aria-hidden="true"></i>
+            <h3>Tools and Frameworks</h3>
+            <p>CTGAN, SDV, OpenAI APIs, diffusion models, and evaluation workflows.</p>
+          </article>
+          <article class="resource-card">
+            <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+            <h3>Reading Materials</h3>
+            <p>Curated papers and resources on synthetic data for educational contexts.</p>
+          </article>
+          <article class="resource-card">
+            <i class="fa-solid fa-code" aria-hidden="true"></i>
+            <h3>Code Examples</h3>
+            <p>Hands-on examples and implementation guides for participants.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-layout">
+          <div>
+            <p class="section-kicker">Registration and Contact</p>
+            <h2 class="section-title" id="contact-title">Get in Touch</h2>
+            <div class="rich-text">
+              <p>
+                Registration for this workshop is handled through the LAK26 official
+                registration process. Please visit the LAK26 conference website for
+                registration details and deadlines.
+              </p>
+              <p>
+                For questions about the workshop, lightning talk submissions, or potential
+                topics, contact any organizer listed above.
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-panel">
+            <h3>Lightning Talk Topics</h3>
+            <ul>
+              <li>Use cases of synthetic data in learning analytics</li>
+              <li>Novel methods for generating or evaluating synthetic data</li>
+              <li>Ethical, legal, or methodological reflections</li>
+              <li>Position papers on opportunities and challenges</li>
+            </ul>
+            <div class="institution-list" aria-label="Organizing institutions">
+              <div>
+                <strong>SLATE</strong>
+                <span>University of Bergen, Norway</span>
+              </div>
+              <div>
+                <strong>C3L</strong>
+                <span>University of South Australia</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <h2>LAK26 Workshop</h2>
+          <p>Generative AI for Synthetic Data in Learning Analytics</p>
+        </div>
+        <div class="footer-links" aria-label="Footer links">
+          <a href="#about">About</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#organizers">Organizers</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; 2026 LAK26 Workshop. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
