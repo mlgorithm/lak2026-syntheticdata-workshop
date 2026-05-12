@@ -4,7 +4,7 @@
   const navMenu = document.querySelector(".nav-menu");
   const navLinks = Array.from(document.querySelectorAll('.nav-menu a[href^="#"], .footer-links a[href^="#"], .brand[href^="#"], .hero-actions a[href^="#"]'));
   const sections = Array.from(document.querySelectorAll("main section[id]"));
-  const animatedItems = document.querySelectorAll(".feature-card, .resource-card, .organizer-card, .timeline-item, .contact-panel");
+  const animatedItems = document.querySelectorAll(".feature-card, .resource-card, .download-panel, .organizer-card, .timeline-item, .contact-panel");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   function setHeaderState() {

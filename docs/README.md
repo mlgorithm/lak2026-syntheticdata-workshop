@@ -2,6 +2,9 @@
 
 This folder contains the static website for GitHub Pages.
 
+Workshop datasets and resource files used by the website live under
+`resources/datasets/` and `resources/materials/`.
+
 ## Local preview
 
 Run a static server from the repository root:
